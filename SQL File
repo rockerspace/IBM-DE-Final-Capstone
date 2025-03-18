@@ -1,3 +1,4 @@
+Module 1
 mysql> CREATE TABLE sales_data (
     ->     product_id INT NOT NULL,
     ->     customer_id INT NOT NULL,
@@ -20,3 +21,5 @@ mysql> CREATE TABLE sales_data (
 Query OK, 0 rows affected (0.05 sec)
 mysql> SELECT COUNT(*) AS record_count FROM sales_data;
 mysql> SHOW INDEX FROM sales_data;
+
+Module 2
