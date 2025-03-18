@@ -19,3 +19,4 @@ mysql> CREATE TABLE sales_data (
     -> );
 Query OK, 0 rows affected (0.05 sec)
 mysql> SELECT COUNT(*) AS record_count FROM sales_data;
+mysql> SHOW INDEX FROM sales_data;
