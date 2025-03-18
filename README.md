@@ -5,4 +5,7 @@ design the schema for OLTP database.
 load data into OLTP database.
 automate admin tasks.
 
-Import data using phpmyadmin
+
+Task 3 - Import the data in the file oltpdata.csv
+Task 4 - List the tables in the database sales.
+Write a query to find out the count of records in the tables sales_data.
