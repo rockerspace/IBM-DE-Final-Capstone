@@ -18,3 +18,4 @@ mysql> CREATE TABLE sales_data (
     ->     timestamp DATETIME NOT NULL
     -> );
 Query OK, 0 rows affected (0.05 sec)
+mysql> SELECT COUNT(*) AS record_count FROM sales_data;
