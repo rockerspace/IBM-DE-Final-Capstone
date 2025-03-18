@@ -22,3 +22,8 @@ Take a screenshot of the contents of the datadump.sh bash file command you used 
 Name the screenshot as exportdata.jpg. (images can be saved with either .jpg or .png extension)
 
 
+**Module 2 **
+
+Querying Database in NOSQL
+You are a data engineer at an e-commerce company. Your company needs you to design a data platform that uses MongoDB as a NoSQL database. You will be using MongoDB to store the e-commerce catalog data.
+
