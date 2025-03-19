@@ -26,3 +26,13 @@ Module 2
 
 mongoimport -u root -p koriD9eGEVkaCsafqxUoCRRQ --host mongo --authenticationDatabase admin -d catalog -c electronics catalog.json
 test> show dbs;
+test> use catalog
+... show collections
+switched to db catalog
+catalog> show collections
+electronics
+catalog> 
+db.electronics.createIndex({ type: 1 })
+catalog> db.electronics.createIndex({ type: 1 })
+type_1
+catalog> 
