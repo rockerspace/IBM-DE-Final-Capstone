@@ -34,5 +34,9 @@ electronics
 catalog> 
 db.electronics.createIndex({ type: 1 })
 catalog> db.electronics.createIndex({ type: 1 })
+catalog> db.electronics.countDocuments({ type: "smartphone", "screenSize": 6 })
+0
 type_1
 catalog> 
+catalog> db.electronics.countDocuments({ type: "laptop" })
+389
