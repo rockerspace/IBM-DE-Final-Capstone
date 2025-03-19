@@ -23,3 +23,6 @@ mysql> SELECT COUNT(*) AS record_count FROM sales_data;
 mysql> SHOW INDEX FROM sales_data;
 
 Module 2
+
+mongoimport -u root -p koriD9eGEVkaCsafqxUoCRRQ --host mongo --authenticationDatabase admin -d catalog -c electronics catalog.json
+test> show dbs;
