@@ -59,3 +59,9 @@ Take a screenshot of the command you used and the output.
 
 Name the screenshot as mongoexport.jpg. (images can be saved with either .jpg or .png extension)
 
+**Module 3**
+Data Warehousing 
+
+You will start your project by designing a Star Schema for the warehouse by identifying the columns for the various dimension and fact tables in the schema. Name your database as softcart
+
+
