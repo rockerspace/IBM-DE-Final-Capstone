@@ -26,4 +26,27 @@ Name the screenshot as exportdata.jpg. (images can be saved with either .jpg or 
 
 Querying Database in NOSQL
 You are a data engineer at an e-commerce company. Your company needs you to design a data platform that uses MongoDB as a NoSQL database. You will be using MongoDB to store the e-commerce catalog data.
+Task 1 - Import ‘catalog.json’ into mongodb server into a database named ‘catalog’ and a collection named ‘electronics’
+Task 2 - List out all the databases
+Take a screenshot of the command you used and the output.
+
+Name the screenshot as list-dbs.jpg. (images can be saved with either .jpg or .png extension)
+
+Task 3 - List out all the collections in the database catalog.
+Take a screenshot of the command you used and the output.
+
+Name the screenshot as list-collections.jpg. (images can be saved with either .jpg or .png extension)
+
+Task 4 - Create an index on the field “type”
+Take a screenshot of the command you used and the output.
+
+Name the screenshot as create-index.jpg. (images can be saved with either .jpg or .png extension)
+
+Task 5 - Write a query to find the count of laptops
+Take a screenshot of the command you used and the output.
+
+Name the screenshot as mongo-query-laptops.jpg. (images can be saved with either .jpg or .png extension)
+
+Task 6 - Write a query to find the number of smart phones with screen size of 6 inches.
+
 
