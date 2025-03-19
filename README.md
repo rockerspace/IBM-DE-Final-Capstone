@@ -49,4 +49,13 @@ Name the screenshot as mongo-query-laptops.jpg. (images can be saved with either
 
 Task 6 - Write a query to find the number of smart phones with screen size of 6 inches.
 
+Task 7. Write a query to find out the average screen size of smart phones.
+Take a screenshot of the command you used and the output.
+
+Name the screenshot as mongo-query-mobiles2.jpg. (images can be saved with either .jpg or .png extension)
+
+Task 8 - Export the fields _id, “type”, “model”, from the ‘electronics’ collection into a file named electronics.csv
+Take a screenshot of the command you used and the output.
+
+Name the screenshot as mongoexport.jpg. (images can be saved with either .jpg or .png extension)
 
