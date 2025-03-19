@@ -40,3 +40,8 @@ type_1
 catalog> 
 catalog> db.electronics.countDocuments({ type: "laptop" })
 389
+catalog> db.electronics.countDocuments({ type: "smartphone", "screenSize": 6 })
+catalog> db.electronics.aggregate([
+...   { $match: { type: "smartphone" } },
+...   { $group: { _id: null, averageScreenSize: { $avg: "$screenSize" } } }
+... ])
