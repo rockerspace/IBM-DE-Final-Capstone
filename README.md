@@ -158,3 +158,31 @@ Take a screenshot of the first 5 rows in the table FactSales.
 
 Name the screenshot FactSales.jpg. (Images can be saved with either the .jpg or .png extension.)
 
+Task 5 - Create a grouping sets query
+Create a grouping sets query using the columns country, category, totalsales.
+
+Take a screenshot of the sql query and the output rows. Also save the query as a text for later use.
+
+Name the screenshot groupingsets.jpg. (Images can be saved with either the .jpg or .png extension.)
+
+Task 6 - Create a rollup query
+Create a rollup query using the columns year, country, and totalsales.
+
+Take a screenshot of the sql query and the output rows. Also save the query as a text for later use.
+
+Name the screenshot rollup.jpg. (Images can be saved with either the .jpg or .png extension.)
+
+Task 7 - Create a cube query
+Create a cube query using the columns year, country, and average sales.
+
+Take a screenshot of the sql query and the output rows. Also save the query as a text for later use.
+
+Name the screenshot cube.jpg. (Images can be saved with either the .jpg or .png extension.)
+
+Task 8 - Create an MQT
+Create an MQT named total_sales_per_country that has the columns country and total_sales.
+
+Take a screenshot of the sql query and the output rows. Also save the query as a text for later use.
+
+Name the screenshot mqt.jpg. (Images can be saved with either the .jpg or .png extension.)
+
