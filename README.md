@@ -122,3 +122,39 @@ Take a screenshot showing the success of the schema creation.
 Name the screenshot createschema.jpg. (Images can be saved with either the .jpg or .png extension.)
 
 
+Task 1 - Load data into the dimension table DimDate
+Download the data from this link
+
+Load the downloaded data into DimDate table.
+
+Take a screenshot of the first 5 rows in the table DimDate.
+
+Name the screenshot DimDate.jpg. (Images can be saved with either the .jpg or .png extension.)
+
+Task 2 - Load data into the dimension table DimCategory
+Download the data from this link
+
+Load the downloaded data into DimCategory table.
+
+Take a screenshot of the first 5 rows in the table DimCategory.
+
+Name the screenshot DimCategory.jpg. (Images can be saved with either the .jpg or .png extension.)
+
+Task 3 - Load data into the dimension table DimCountry
+Download the data from this link
+
+Load the downloaded data into DimCountry table.
+
+Take a screenshot of the first 5 rows in the table DimCountry.
+
+Name the screenshot DimCountry.jpg. (Images can be saved with either the .jpg or .png extension.)
+
+Task 4 - Load data into the fact table FactSales
+Download the data from this link
+
+Load this data into FactSales table.
+
+Take a screenshot of the first 5 rows in the table FactSales.
+
+Name the screenshot FactSales.jpg. (Images can be saved with either the .jpg or .png extension.)
+
