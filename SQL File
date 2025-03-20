@@ -45,3 +45,78 @@ catalog> db.electronics.aggregate([
 ...   { $match: { type: "smartphone" } },
 ...   { $group: { _id: null, averageScreenSize: { $avg: "$screenSize" } } }
 ... ])
+
+
+CREATE TABLE DimDate (
+    dateid INT PRIMARY KEY,
+    date DATE NOT NULL,
+    Year INT NOT NULL,
+    Quarter INT NOT NULL,
+    QuarterName VARCHAR(10) NOT NULL,
+    Month INT NOT NULL,
+    Monthname VARCHAR(15) NOT NULL,
+    Day INT NOT NULL,
+    Weekday INT NOT NULL,
+    WeekdayName VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE DimCategory (
+    categoryid INT PRIMARY KEY,
+    category VARCHAR(50) NOT NULL
+);
+CREATE TABLE DimCountry (
+    countryid INT PRIMARY KEY,
+    country VARCHAR(50) NOT NULL
+);
+CREATE TABLE FactSales (
+    orderid INT PRIMARY KEY,
+    dateid INT NOT NULL,
+    countryid INT NOT NULL,
+    categoryid INT NOT NULL,
+    amount DECIMAL(18,2) NOT NULL,
+    FOREIGN KEY (dateid) REFERENCES DimDate(dateid),
+    FOREIGN KEY (countryid) REFERENCES DimCountry(countryid),
+    FOREIGN KEY (categoryid) REFERENCES DimCategory(categoryid)
+);
+
+Grouping sets
+
+SELECT 
+    country,
+    category,
+    SUM(amount) AS totalsales
+FROM 
+    FactSales fs
+    JOIN DimCountry dc ON fs.countryid = dc.countryid
+    JOIN DimCategory dcat ON fs.categoryid = dcat.categoryid
+GROUP BY 
+    GROUPING SETS (
+        (country, category),  -- Group by country and category
+        (country),            -- Group by country only
+        (category),           -- Group by category only
+        ()                    -- Grand total
+    );
+
+SELECT 
+    d.Year,
+    c.country,
+    SUM(f.amount) AS totalsales
+FROM 
+    FactSales f
+    JOIN DimDate d ON f.dateid = d.dateid
+    JOIN DimCountry c ON f.countryid = c.countryid
+GROUP BY 
+    ROLLUP (d.Year, c.country);
+
+CREATE MATERIALIZED VIEW total_sales_per_country AS
+SELECT 
+    c.country,
+    SUM(f.amount) AS total_sales
+FROM 
+    FactSales f
+    JOIN DimCountry c ON f.countryid = c.countryid
+GROUP BY 
+    c.country;
+
+
+
